@@ -37,8 +37,10 @@ public class LoginCheckFilter implements Filter {
         String[] urls = new String[]{
                 "/employee/login",
                 "/employee/logout",
+                "/user/register",
+                "/user/login",
                 "/backend/**",
-                "/front/**"
+                "/front/**",
         };
 
 
@@ -60,6 +62,7 @@ public class LoginCheckFilter implements Filter {
             filterChain.doFilter(request,response);
             return;
         }
+
 
         log.info("用户未登录");
         //5、如果未登录则返回未登录结果，通过输出流方式向客户端页面响应数据

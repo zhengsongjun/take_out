@@ -19,11 +19,11 @@ public class User implements Serializable {
 
 
     //姓名
-    private String name;
+    private String username;
 
 
     //手机号
-    private String phone;
+    private String password;
 
 
     //性别 0 女 1 男
