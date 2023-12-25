@@ -6,6 +6,15 @@ function loginApi(data) {
     })
   }
 
+
+function registerApi(data) {
+    return $axios({
+        'url': '/user/register',
+        'method': 'post',
+        data
+    })
+}
+
 function loginoutApi() {
   return $axios({
     'url': '/user/loginout',
